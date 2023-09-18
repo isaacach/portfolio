@@ -9,6 +9,15 @@
 
 body {
   background-color: rgb(36,37,40);
+  height: 200vh;
+  -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 

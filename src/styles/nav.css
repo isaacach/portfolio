@@ -1,7 +1,7 @@
 nav {
-  position: sticky;
+  position: fixed;
   z-index: 0;
-  top: 0;
+  top: 10px;
   left: 10px;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ nav:hover {
   background-color: rgb(1, 121, 121);
 }
 
-li {
+.link-wrapper li {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -40,4 +40,39 @@ li {
   cursor: pointer;
   font-size: 1.7rem;
   color: white;
+}
+
+.ex-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  transition: .4s ;
+}
+
+.ex-links li {
+  display: grid;
+  place-content: center;
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: white;
+  transition: transform .4s ease, background-color .2s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%
+}
+
+.ex-links li:hover {
+  background-color: rgb(1, 121, 121);
+}
+
+nav:hover > .ex-links {
+  transform: rotate(-90deg);
+}
+
+nav:hover > .ex-links li {
+  transform: rotate(90deg);
 }
