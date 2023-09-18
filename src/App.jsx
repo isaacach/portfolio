@@ -1,14 +1,17 @@
 import Navbar from './components/Navbar.jsx'
 import './App.css'
 import './resets.css'
-import Aside from './components/Aside.jsx'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Aside />
+      <div className="bento-box">
+        <div className="bento-row">
+          <div className="about"></div>
+        </div>
+      </div>
     </>
   )
 }
