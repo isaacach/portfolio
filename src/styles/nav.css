@@ -52,6 +52,10 @@ nav:hover {
   transition: .4s ;
 }
 
+.ex-links a {
+  color: unset;
+}
+
 .ex-links li {
   display: grid;
   place-content: center;

@@ -1,22 +1,21 @@
 #root {
   font-family: Poppins, sans-serif;
-  position: relative;
   display: flex;
   align-items: center;
   min-height: 100vh;
-  width: 100%;
+  max-width: calc(100% - 100px);
+  margin-left: 100px;
 }
 
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(36,37,40);
-  height: 200vh;
-  -ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+  min-height: 100vh;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
 
 
 
